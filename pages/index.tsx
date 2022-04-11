@@ -9,6 +9,7 @@ import {
   Avatar,
   Box,
   Button,
+  Container,
   Heading,
   Flex,
   Menu,
@@ -58,6 +59,22 @@ const Social = (props: any) => {
   );
 };
 
+export const Footer = () => (
+  <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
+    <Flex justify={"center"}>
+      <Text fontSize="sm" color="subtle">
+        <Link href={"https://github.com/michaelgold/nextjs-ar-gallery"}>
+          <a>AR Example Template</a>
+        </Link>{" "}
+        -- MIT Licensed and &copy; {new Date().getFullYear()}{" "}
+        <Link href="https://mike.gold">
+          <a>Michael Gold</a>
+        </Link>{" "}
+      </Text>
+    </Flex>
+  </Container>
+);
+
 const Socials = (props: any) => {
   const socials = props.data.artist.socials;
   const displaySocials = socials.map((social: any, idx: any) => (
@@ -72,37 +89,40 @@ const Socials = (props: any) => {
 
 const Home: NextPage = (props: any) => {
   return (
-    <Box className={styles.main} px={[4, 10]}>
-      <Flex justify={"center"} mt={-12}>
-        <Avatar
-          size={"2xl"}
-          src={"/images/avatar.jpg"}
-          // alt={"Author"}
-          css={{
-            border: "2px solid white",
-          }}
-        />
-      </Flex>
-
-      <Box p={6}>
-        <Stack spacing={0} align={"center"} mb={5}>
-          <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
-            {props.data.artist.name}
-          </Heading>
-          <Text color={"gray.500"}>{props.data.artist.shortBio}</Text>
-          <Socials data={props.data} />
-        </Stack>
-      </Box>
-      <Stack>
-        <Flex alignItems={"center"} justify={"center"}>
-          <Heading as="h1" textAlign={"center"} size="4xl">
-            {props.data.project.name}
-          </Heading>
+    <>
+      <Box className={styles.main} px={[4, 10]}>
+        <Flex justify={"center"} mt={-12}>
+          <Avatar
+            size={"2xl"}
+            src={"/images/avatar.jpg"}
+            // alt={"Author"}
+            css={{
+              border: "2px solid white",
+            }}
+          />
         </Flex>
-      </Stack>
 
-      <Models data={props.data} />
-    </Box>
+        <Box p={6}>
+          <Stack spacing={0} align={"center"} mb={5}>
+            <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
+              {props.data.artist.name}
+            </Heading>
+            <Text color={"gray.500"}>{props.data.artist.shortBio}</Text>
+            <Socials data={props.data} />
+          </Stack>
+        </Box>
+        <Stack>
+          <Flex alignItems={"center"} justify={"center"}>
+            <Heading as="h1" textAlign={"center"} size="4xl">
+              {props.data.project.name}
+            </Heading>
+          </Flex>
+        </Stack>
+
+        <Models data={props.data} />
+      </Box>
+      <Footer />
+    </>
   );
 };
 
