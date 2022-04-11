@@ -19,7 +19,7 @@ import {
   propNames,
   SimpleGrid,
   Stack,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import Link from "next/link";
@@ -94,10 +94,10 @@ const Home: NextPage = (props: any) => {
         <Flex justify={"center"} mt={-12}>
           <Avatar
             size={"2xl"}
-            src={"/images/avatar.jpg"}
+            src={props.data.artist.avatar}
             // alt={"Author"}
             css={{
-              border: "2px solid white",
+              border: "2px solid white"
             }}
           />
         </Flex>
