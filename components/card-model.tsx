@@ -21,14 +21,7 @@ const Attribute = (props: any) => {
   const trait_type = attribute.trait_type;
   const value = attribute.value;
   return (
-    <Stat
-      px={{ base: 4, md: 8 }}
-      py={"2"}
-      shadow={"md"}
-      //   border={"1px solid"}
-      //   borderColor={useColorModeValue("gray.800", "gray.500")}
-      rounded={"lg"}
-    >
+    <Stat px={{ base: 4, md: 8 }} py={"2"} shadow={"md"} rounded={"lg"}>
       <StatLabel
         textTransform={"uppercase"}
         fontWeight={"medium"}
