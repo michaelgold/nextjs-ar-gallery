@@ -28,8 +28,8 @@ import { IconContext } from "react-icons";
 const Models = (props: any) => {
   const models = props.data.models;
   // return <></>;
-  const displayModels = models.map((model: any) => (
-    <CardModel key={model.id} model={model}></CardModel>
+  const displayModels = models.map((model: any, idx: any) => (
+    <CardModel key={idx} model={model}></CardModel>
   ));
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, lg: 8 }}>

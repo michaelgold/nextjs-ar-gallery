@@ -16,9 +16,8 @@
   },
   "models": [
     {
-      "id": 1,
-      "glbFile": "/assets/gold-cube.glb",
       "name": "Gold Cube",
+      "glbFile": "/assets/gold-cube.glb",
       "attributes": [
         { "trait_type": "shape", "value": "cube" },
         { "trait_type": "size", "value": "small" },
@@ -27,9 +26,8 @@
       ]
     },
     {
-      "id": 2,
-      "glbFile": "/assets/silver-cube.glb",
       "name": "Silver Cube",
+      "glbFile": "/assets/silver-cube.glb",
       "attributes": [
         { "trait_type": "shape", "value": "cube" },
         { "trait_type": "size", "value": "small" },
@@ -38,9 +36,8 @@
       ]
     },
     {
-      "id": 3,
-      "glbFile": "/assets/red-cube.glb",
       "name": "Red Cube",
+      "glbFile": "/assets/red-cube.glb",
       "attributes": [
         { "trait_type": "shape", "value": "cube" },
         { "trait_type": "size", "value": "small" },
@@ -49,9 +46,8 @@
       ]
     },
     {
-      "id": 4,
-      "glbFile": "/assets/green-cube.glb",
       "name": "Green Cube",
+      "glbFile": "/assets/green-cube.glb",
       "attributes": [
         { "trait_type": "shape", "value": "cube" },
         { "trait_type": "size", "value": "small" },
