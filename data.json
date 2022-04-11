@@ -1,0 +1,63 @@
+{
+  "artist": {
+    "name": "Michael Gold",
+    "avatar": "/images/avatar.jpg",
+    "shortBio": "Generative Artist",
+    "socials": [
+      { "icon": "FaHome", "url": "https://mike.gold" },
+      { "icon": "FaTwitter", "url": "https://twitter.com/michaelgold" },
+      { "icon": "FaGithub", "url": "https://github.com/michaelgold" },
+      { "icon": "FaLinkedin", "url": "https://linkedin.com/in/gold1" },
+      { "icon": "FaUniversity", "url": "https://sva.edu/faculty/michael-gold" }
+    ]
+  },
+  "project": {
+    "name": "AR Gallery Example"
+  },
+  "models": [
+    {
+      "id": 1,
+      "glbFile": "/assets/gold-cube.glb",
+      "name": "Gold Cube",
+      "attributes": [
+        { "trait_type": "shape", "value": "cube" },
+        { "trait_type": "size", "value": "small" },
+        { "trait_type": "color", "value": "gold" },
+        { "trait_type": "material", "value": "metal" }
+      ]
+    },
+    {
+      "id": 2,
+      "glbFile": "/assets/silver-cube.glb",
+      "name": "Silver Cube",
+      "attributes": [
+        { "trait_type": "shape", "value": "cube" },
+        { "trait_type": "size", "value": "small" },
+        { "trait_type": "color", "value": "silver" },
+        { "trait_type": "material", "value": "metal" }
+      ]
+    },
+    {
+      "id": 3,
+      "glbFile": "/assets/red-cube.glb",
+      "name": "Red Cube",
+      "attributes": [
+        { "trait_type": "shape", "value": "cube" },
+        { "trait_type": "size", "value": "small" },
+        { "trait_type": "color", "value": "red" },
+        { "trait_type": "material", "value": "plastic" }
+      ]
+    },
+    {
+      "id": 4,
+      "glbFile": "/assets/green-cube.glb",
+      "name": "Green Cube",
+      "attributes": [
+        { "trait_type": "shape", "value": "cube" },
+        { "trait_type": "size", "value": "small" },
+        { "trait_type": "color", "value": "green" },
+        { "trait_type": "material", "value": "plastic" }
+      ]
+    }
+  ]
+}
