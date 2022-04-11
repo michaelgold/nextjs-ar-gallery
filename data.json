@@ -1,7 +1,7 @@
 {
   "artist": {
     "name": "Michael Gold",
-    "avatar": "/images/avatar.jpg",
+    "avatar": "/images/test.jpg",
     "shortBio": "Generative Artist",
     "socials": [
       { "icon": "FaHome", "url": "https://mike.gold" },
