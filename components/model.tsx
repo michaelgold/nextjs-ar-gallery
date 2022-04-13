@@ -19,6 +19,7 @@ interface ModelViewerJSX {
   poster?: string;
   iosSrc?: string;
   seamlessPoster?: boolean;
+  autoplay?: boolean;
   environmentImage?: string;
   exposure?: string;
   interactionPromptThreshold?: string;
@@ -37,7 +38,7 @@ const Model = (props: any) => {
     "(min-width: 30em)",
     "(min-width: 48em)",
     "(min-width: 62em)",
-    "(min-width: 80em)",
+    "(min-width: 80em)"
   ]);
 
   const [width, setWidth] = useState("20em");
@@ -75,7 +76,7 @@ const Model = (props: any) => {
       h={height}
       style={{
         backgroundImage: `url(${props.imageUrl})`,
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "no-repeat"
 
         // width: "100vw",
         // height: "100vw",
@@ -91,6 +92,7 @@ const Model = (props: any) => {
         interaction-prompt-threshold="0"
         shadow-intensity="0"
         ar
+        autoplay
         ar-modes="webxr scene-viewer quick-look"
         auto-rotate
         camera-controls
@@ -99,7 +101,7 @@ const Model = (props: any) => {
         style={{
           display: "block",
           width: width,
-          height: height,
+          height: height
         }}
       >
         <Box
