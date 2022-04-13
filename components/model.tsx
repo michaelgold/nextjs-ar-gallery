@@ -67,7 +67,7 @@ const Model = (props: any) => {
     setHeight(h);
   }, [sm, md, lg, xl]);
   console.log(width);
-  const iosSrc = props.usdzFile ? props.iosSrc : "";
+  const iosSrc = props.usdzFile ? props.usdzFile : "";
 
   return (
     <Box
