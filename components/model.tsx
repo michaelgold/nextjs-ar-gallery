@@ -70,18 +70,7 @@ const Model = (props: any) => {
   const iosSrc = props.usdzFile ? props.usdzFile : "";
 
   return (
-    <Box
-      id="card"
-      w={width}
-      h={height}
-      style={{
-        backgroundImage: `url(${props.imageUrl})`,
-        backgroundRepeat: "no-repeat"
-
-        // width: "100vw",
-        // height: "100vw",
-      }}
-    >
+    <Box id="card" w={width} h={height}>
       <model-viewer
         id="first"
         src={props.glbFile}
